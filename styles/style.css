@@ -168,12 +168,12 @@ section {
   background: #0b2f5b;
 }
 
-.featur-text h2 {
+.colonial h2 {
   font-size: 2.2rem;
   color: white;
 }
 
-.featur-text p {
+.colonial p {
   color: white;
 }
 
@@ -203,10 +203,12 @@ section {
   border-radius: 12px;
   padding: 40px 30px;
   box-shadow: 0, 10px, 30px, rgb(0 0 0 / 5%);
+  border: 2px solid yellow;
 }
 
 .card.active {
-  border: 2px solid #4f46e5;
+  background: #0b2f5b;
+  color: #fff;
 }
 
 .card h3 {
@@ -299,6 +301,11 @@ section {
 }
 
 .testimonial .card.blue {
+  background: #4f46e5;
+  color: #fff;
+}
+
+.testimonial .card.green {
   background: #4f46e5;
   color: #fff;
 }

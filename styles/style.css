@@ -6,10 +6,10 @@
 }
 
 body {
-  font-family: "Inter", Arial, sans-serif;
+  font-family: "Inter",Arial, sans-serif;
   color: #1d1e25;
   line-height: 1.6;
-  background-color: #ffffff;
+  background-color: #fff;
 }
 
 img {
@@ -169,8 +169,8 @@ section {
 }
 
 .featur-text h2 {
-   font-size: 2.2rem;
-   color: white;
+  font-size: 2.2rem;
+  color: white;
 }
 
 .featur-text p {
@@ -199,10 +199,10 @@ section {
 }
 
 .card {
-  background: #ffffff;
+  background: #fff;
   border-radius: 12px;
   padding: 40px 30px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  box-shadow: 0, 10px, 30px, rgba(0,0,0,5%);
 }
 
 .card.active {
@@ -365,26 +365,6 @@ section {
   color: #cbd5f5;
 }
 
-/* ================= RESPONSIVE ================= 
-@media (max-width: 900px) {
-  .hero-content,
-  .feature-content,
-  .pricing-cards,
-  .cards,
-  .apps-container,
-  .data-container,
-  .footer-content {
-    grid-template-columns: 1fr;
-  }
-
-  .navbar {
-    display: none;
-  }
-
-  section {
-    padding: 60px 0;
-  }
-}*/
 /* For tablets */
 @media (max-width: 768px) {
   .navbar {
@@ -405,4 +385,3 @@ section {
     width: 100%;
   }
 }
-

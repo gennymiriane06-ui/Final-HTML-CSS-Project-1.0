@@ -16,7 +16,7 @@ gennymiriane@gmail.com
 
 - .github/workflows/linters.yml
 - assets
-- /styles/style.css
-- index.html
+- /styles/style.CSS
+- index.HTML
 - README.md
 

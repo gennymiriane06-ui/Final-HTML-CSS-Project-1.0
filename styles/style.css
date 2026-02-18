@@ -1,4 +1,3 @@
-/* ================= RESET & BASE ================= */
 * {
   margin: 0;
   padding: 0;
@@ -28,7 +27,17 @@ button {
   font-family: inherit;
 }
 
-/* ================= GLOBAL ================= */
+.menubtn {
+  display: none;
+}
+
+.bar {
+  width: 18px;
+  height: 3px;
+  background-color: #fff;
+  margin: 5px;
+}
+
 .container {
   width: 90%;
   max-width: 1200px;
@@ -39,7 +48,6 @@ section {
   padding: 80px 0;
 }
 
-/* ================= BUTTONS ================= */
 .btn-primary {
   background: blue;
   color: #fff;
@@ -73,7 +81,6 @@ section {
   font-size: 1.1rem;
 }
 
-/* ================= HEADER ================= */
 .header {
   background: #0b2f5b;
   border-bottom: 1px solid #eee;
@@ -114,7 +121,6 @@ section {
   color: white;
 }
 
-/* ================= HERO ================= */
 .hero {
   background: #0b2f5b;
 }
@@ -137,7 +143,6 @@ section {
   color: white;
 }
 
-/* ================= FEATURES ================= */
 .feature-content {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -163,7 +168,6 @@ section {
   margin-bottom: 24px;
 }
 
-/* ================= EXTENSION ================= */
 .colonial {
   background: #0b2f5b;
 }
@@ -177,7 +181,6 @@ section {
   color: white;
 }
 
-/* ================= PRICING ================= */
 .pricing {
   background: #f9fafb;
 }
@@ -224,11 +227,12 @@ section {
   margin-bottom: 10px;
 }
 
-/* ================= MOMO ================= */
 .momo {
   background: #0b2f5b;
   color: #fff;
   text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .momo h2 {
@@ -242,12 +246,12 @@ section {
   margin-bottom: 30px;
 }
 
-/* ================= DATA SECTION ================= */
 .data-container {
-  display: grid;
+  display: flex;
   grid-template-columns: 1fr 1fr;
   gap: 50px;
   align-items: center;
+  justify-content: center;
 }
 
 .data-container h2 {
@@ -260,7 +264,6 @@ section {
   padding: 20px;
 }
 
-/* ================= SPONSORS ================= */
 .sponsors {
   text-align: center;
 }
@@ -273,27 +276,33 @@ section {
   flex-wrap: wrap;
 }
 
-/* ================= APPS ================= */
 .apps-container {
-  display: grid;
+  display: flex;
   grid-template-columns: 1fr 1fr;
   gap: 50px;
   align-items: center;
   background: #0b2f5b;
   color: white;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
-/* ================= TESTIMONIAL ================= */
 .testimonial {
   background: #f9fafb;
   text-align: center;
+  justify-content: center;
 }
 
 .cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
+  gap: 100px;
   margin-top: 50px;
+  padding-left: 300px;
+  padding-right: 20px;
+  justify-content: center;
+  width: 70%;
 }
 
 .testimonial .card {
@@ -310,11 +319,11 @@ section {
   color: #fff;
 }
 
-.testimonial hr {
-  margin: 20px 0;
+.testimonial h2 {
+  justify-content: center;
+  text-align: center;
 }
 
-/* ================= CTA ================= */
 .cta {
   background: #0b2f5b;
   color: #fff;
@@ -332,7 +341,6 @@ section {
   margin-top: 30px;
 }
 
-/* ================= FOOTER ================= */
 .footer {
   color: #cbd5f5;
   padding-top: 80px;
@@ -372,25 +380,91 @@ section {
   color: #cbd5f5;
 }
 
-/* For tablets */
 @media (max-width: 768px) {
+
   .navbar {
-    flex-direction: column;
+    display: none;
   }
 
-  .hero-text {
-    font-size: 1.5rem;
+  .menubtn {
+    display: block;
   }
-}
 
-/* For mobile phones */
-@media (max-width: 480px) {
-  .hero-text {
-    font-size: 1.2rem;
+  .hero-content {
+    grid-template-columns: 1fr;
     text-align: center;
   }
 
-  .hero-image {
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+
+  .feature-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .colonial .feature-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .data-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .apps-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .pricing-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .footer-links {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .stores {
+    flex-direction: column;
+  }
+
+}
+
+@media (max-width: 480px) {
+
+  section {
+    padding: 50px 0;
+  }
+
+  .hero-text h1 {
+    font-size: 1.6rem;
+  }
+
+  .pricing-title h2,
+  .momo h2,
+  .testimonial h2,
+  .cta h2 {
+    font-size: 1.6rem;
+  }
+
+  .btn-primary,
+  .btn-secondary,
+  .btn-outline {
     width: 100%;
   }
+
 }
+

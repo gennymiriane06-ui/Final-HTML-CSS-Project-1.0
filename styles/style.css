@@ -381,7 +381,6 @@ section {
 }
 
 @media (max-width: 768px) {
-
   .navbar {
     display: none;
   }
@@ -440,11 +439,9 @@ section {
   .stores {
     flex-direction: column;
   }
-
 }
 
 @media (max-width: 480px) {
-
   section {
     padding: 50px 0;
   }
@@ -465,6 +462,4 @@ section {
   .btn-outline {
     width: 100%;
   }
-
 }
-

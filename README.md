@@ -1,4 +1,4 @@
-# Final Html/css Final Projects
+# Final HTML/CSS Final Projects
 
 (A simple overview/tagline of the project and its purpose.)
 

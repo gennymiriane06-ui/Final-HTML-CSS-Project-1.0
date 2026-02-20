@@ -345,6 +345,7 @@ section {
 .footer {
   color: #cbd5f5;
   padding-top: 80px;
+  background-color: #0b2f5b;
 }
 
 .footer-content {
@@ -438,6 +439,7 @@ section {
   .footer {
     display: flex;
     flex-direction: column;
+    text-align: center;
   }
 
   .footer-bottom {
@@ -447,11 +449,6 @@ section {
 
   .stores {
     flex-direction: center;
-  }
-
-  .footer-container {
-    align-items: center;
-    padding-left: 60%;
   }
 
   .footer-brand {

@@ -451,11 +451,11 @@ section {
 
   .footer-container {
     align-items: center;
-    padding-right: 50%;
+    padding-left: 60%;
   }
 
   .footer-brand {
-    padding-left: 10%;
+    align-items: center;
   }
 }
 

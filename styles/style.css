@@ -341,7 +341,6 @@ section {
   margin-top: 30px;
 }
 
-
 .footer {
   color: #cbd5f5;
   padding-top: 80px;
@@ -383,7 +382,6 @@ section {
 }
 
 @media (max-width: 768px) {
-  
   .navbar {
     display: none;
   }
@@ -477,7 +475,6 @@ section {
   .btn-outline {
     width: 100%;
   }
-
 
   .colonial .feature-content,
   .data-container,

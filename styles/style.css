@@ -4,6 +4,26 @@
   box-sizing: border-box;
 }
 
+.container-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.navbar button {
+  margin-left: 10px;
+}
+
+.menubtn {
+  display: none;
+}
+
 body {
   font-family: Inter, sans-serif;
   color: #1d1e25;
@@ -27,9 +47,9 @@ button {
   font-family: inherit;
 }
 
-.menubtn {
+/* .menubtn {
   display: none;
-}
+} */
 
 .bar {
   width: 18px;
@@ -110,11 +130,11 @@ section {
   font-weight: 600;
 }
 
-.navbar {
-  display: flex;
-  align-items: center;
-  gap: 24px;
-}
+/* .navbar { */
+  /* display: flex; */
+  /* align-items: center; */
+  /* gap: 24px; */
+/* } */
 
 .navbar a {
   font-weight: 500;
@@ -387,8 +407,21 @@ section {
   }
 
   .menubtn {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
   }
+
+  .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #cbd5f5;
+  }
+
 
   .hero-content {
     grid-template-columns: 1fr;
@@ -397,6 +430,16 @@ section {
 
   .hero-text h1 {
     font-size: 2rem;
+  }
+
+  .pricing-cards .card:first-child,
+  .pricing-cards .card:last-child {
+    display: none;
+  }
+
+  .cards .card:nth-child(2),
+  .cards .card:last-child {
+    display: none;
   }
 
   .data-container {
@@ -476,9 +519,16 @@ section {
     width: 100%;
   }
 
+  .btn-primary,
+  .btn-secondary,
+  .apps .btn-primary {
+  margin-bottom: 40px;  /* increase if you want more space */
+}
+
   .colonial .feature-content,
+  .container,
   .data-container,
   .apps-container {
-    display: block;
+    display: block; 
   }
 }

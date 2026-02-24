@@ -47,7 +47,7 @@ a {
   color: inherit;
 }
 
-/* .menubtn {
+ /* .menubtn {
   display: none;
 } */
 
@@ -130,11 +130,11 @@ section {
   font-weight: 600;
 }
 
-/* .navbar { */
-/* display: flex; */
-/* align-items: center; */
-/* gap: 24px; */
-/* } */
+ /* .navbar { */
+ /* display: flex; */
+ /* align-items: center; */
+ /* gap: 24px; */
+ /* } */
 
 .navbar a {
   font-weight: 500;
@@ -432,8 +432,8 @@ section {
   }
 
   .cards .card {
-    width: 100% !important;
-    gap: 0;
+   width: 100% !important;
+   gap: 0;
   }
 
   .pricing-cards .card:first-child,
@@ -521,7 +521,7 @@ section {
   .btn-primary,
   .btn-secondary,
   .apps .btn-primary {
-    margin-bottom: 40px;
+  margin-bottom: 40px;
   }
 
   .colonial .feature-content,

@@ -236,6 +236,11 @@ section {
   margin: 20px 0;
 }
 
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
 .card ul li {
   margin-bottom: 10px;
 }
@@ -360,7 +365,7 @@ section {
   text-align: center;
 }
 
-.logo {
+.logo-foot {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -370,7 +375,7 @@ section {
   height: 40px;
 }
 
-.logo span {
+.logo-span {
   font-size: 1.5rem;
   font-weight: bold;
   color: #fff;
@@ -394,11 +399,6 @@ section {
 
 .footer-column h4 {
   margin-bottom: 10px;
-}
-
-.footer-column ul {
-  list-style: none;
-  padding: 0;
 }
 
 .footer-column li {
@@ -439,7 +439,6 @@ section {
     align-items: center;
   }
 }
-
 
 @media (max-width: 768px) {
   .navbar {

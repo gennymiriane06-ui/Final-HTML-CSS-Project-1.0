@@ -572,9 +572,9 @@ section {
     flex-direction: column;
     justify-content: center;
     padding: 3% 5%;
-    }
+  }
 
   .apps-text {
     width: auto;
   }
-  }
+}

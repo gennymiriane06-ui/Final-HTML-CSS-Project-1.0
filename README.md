@@ -1,4 +1,8 @@
-# Final Html/css Final Projects
+# Final HTML/CSS Final Projects
+
+(A simple overview/tagline of the project and its purpose.)
+
+![FINALPROJECT1.0 Form Screenshot](assets/landscape.png)
 
 ## Description
 
@@ -12,7 +16,7 @@ gennymiriane@gmail.com
 
 - .github/workflows/linters.yml
 - assets
-- /styles/style.css
-- index.html
+- /styles/style.CSS
+- index.HTML
 - README.md
 

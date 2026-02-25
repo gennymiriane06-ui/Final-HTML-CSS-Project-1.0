@@ -241,6 +241,10 @@ section {
   padding: 0;
 }
 
+.footer-column li {
+  margin: 5px 0;
+}
+
 .card ul li {
   margin-bottom: 10px;
 }
@@ -381,7 +385,6 @@ section {
   color: #fff;
 }
 
-
 .footer-container {
   max-width: 1200px;
   margin: 0 auto;
@@ -399,10 +402,6 @@ section {
 
 .footer-column h4 {
   margin-bottom: 10px;
-}
-
-.footer-column li {
-  margin: 5px 0;
 }
 
 .footer-era {

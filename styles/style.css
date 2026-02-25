@@ -31,6 +31,9 @@ button {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
 }
 
 .navbar {
@@ -261,6 +264,9 @@ section {
   gap: 50px;
   align-items: center;
   justify-content: center;
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
 }
 
 .data-container h2 {
@@ -300,6 +306,11 @@ section {
   background: #f9fafb;
   text-align: center;
   justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60%;
+  margin: auto;
 }
 
 .cards {
@@ -307,8 +318,6 @@ section {
   grid-template-columns: repeat(3, 1fr);
   gap: 100px;
   margin-top: 50px;
-  padding-left: 300px;
-  padding-right: 20px;
   justify-content: center;
   width: 70%;
 }
@@ -345,44 +354,92 @@ section {
 }
 
 .footer {
-  color: #cbd5f5;
-  padding-top: 80px;
-  background-color: #0b2f5b;
+  background: #0b2f5ba4;
+  color: #fff;
+  padding: 40px 20px;
+  text-align: center;
 }
 
-.footer-content {
-  display: grid;
-  grid-template-columns: 1fr 3fr;
-  gap: 50px;
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  height: 40px;
+}
+
+.logo span {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
 }
 
 .footer-links {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 30px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin: 30px 0;
+}
+
+.footer-column h4 {
+  margin-bottom: 10px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column li {
+  margin: 5px 0;
+}
+
+.footer-era {
+  max-width: 250px;
 }
 
 .footer-bottom {
-  border-top: 1px solid #334155;
-  margin-top: 60px;
-  padding: 20px 0;
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 20px;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.footer-policy {
+  display: flex;
+  gap: 15px;
 }
 
 .icons {
   display: flex;
+  gap: 15px;
   justify-content: center;
-  gap: 20px;
-  padding: 20px 0;
 }
 
-.icons i {
+.icons a {
+  color: #fff;
   font-size: 18px;
-  color: #cbd5f5;
 }
+
+@media (max-width: 768px) {
+  .footer-links {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 
 @media (max-width: 768px) {
   .navbar {
@@ -450,6 +507,10 @@ section {
     width: 100%;
     gap: 0;
     padding-left: 0;
+  }
+
+  .footer-container {
+    flex-direction: column;
   }
 
   .footer-links {
